@@ -1,5 +1,9 @@
 /// @description Movement
 
+//Wrap
+scr_wrap();
+
+//Speed
 script_execute( scr_animate );
 
 if( spd < 0 ){
@@ -63,10 +67,12 @@ if( xButtonPressed ==1 && xButtonReleased == 1 ) {
 	physics_apply_impulse( x, y, lengthdir_x( jumpSpeed, 45 ), lengthdir_y( jumpSpeed * 10, 45 ));
 	xButtonPressed = 0;
 	xButtonPressed = 0;
+	distance = 0;
 };
 
 if( !place_meeting( x, y + 1, obj_ground )) {
 	phy_speed_x = jumpSpeed;
+	distance += 1;
 };
 
 

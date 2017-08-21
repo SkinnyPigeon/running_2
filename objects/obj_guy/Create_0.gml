@@ -2,6 +2,8 @@
 spd = 0;
 jumpSpeed = 0;
 
+distance = 0;
+
 origY = 0;
 newY = 0;
 
