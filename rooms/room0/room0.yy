@@ -331,7 +331,7 @@
         "mvc": "1.0",
         "PhysicsWorld": true,
         "PhysicsWorldGravityX": 0,
-        "PhysicsWorldGravityY": 50,
+        "PhysicsWorldGravityY": 30,
         "PhysicsWorldPixToMeters": 0.1,
         "inheritPhysicsSettings": false
     },

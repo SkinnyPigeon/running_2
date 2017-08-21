@@ -57,14 +57,15 @@ phy_speed_x = spd;
 if( gamepad_button_check_pressed( 0, gp_face3 )){
   xButtonPressed = 1;
   jumpSpeed = spd;
+  xButtonReleased = 0;
 };
 
 if( gamepad_button_check_released( 0, gp_face3 )){
   xButtonReleased = 1;
 };
 
-if( xButtonPressed ==1 && xButtonReleased == 1 ) {
-	physics_apply_impulse( x, y, lengthdir_x( jumpSpeed, 45 ), lengthdir_y( jumpSpeed * 10, 45 ));
+if( xButtonPressed == 1 && xButtonReleased == 1 ) {
+	physics_apply_impulse( x, y, lengthdir_x( jumpSpeed, 45 ), lengthdir_y( jumpSpeed, 45 ));
 	xButtonPressed = 0;
 	xButtonPressed = 0;
 	distance = 0;
